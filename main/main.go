@@ -24,6 +24,6 @@ func main() {
 		panic(err)
 	}
 	h, err := utilities.RouterHandler(*storyAsJson, htmlTemplate)
-	fmt.Println("Starting server.")
+	fmt.Println("Started server...")
 	log.Fatal(http.ListenAndServe(":9000", h))
 }

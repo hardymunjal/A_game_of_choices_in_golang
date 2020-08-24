@@ -1,7 +1,9 @@
 package game
 
 import (
+	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 )
 
@@ -15,9 +17,19 @@ func (h handler) getTemplate(t *template.Template) {
 }
 
 func (h handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	err := h.temp.Execute(w, h.s["intro"])
-	if err != nil {
-		panic(err)
+	path := r.URL.Path[1:]
+	fmt.Println("Path clicked: ", path)
+	if path == "" {
+		path = "intro"
+	}
+	if chap, foundMap := h.s[path]; foundMap {
+		err := h.temp.Execute(w, chap)
+		if err != nil {
+			log.Println("Error: ", err)
+			http.Error(w, "Something went wrong", http.StatusInternalServerError)
+		}
+	} else {
+		http.Error(w, "Didn't find the chapter.", http.StatusInternalServerError)
 	}
 }
 
