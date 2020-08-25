@@ -6,10 +6,11 @@ import (
 )
 
 type path struct {
-	basePath         string
-	pathToDataFolder string
-	PathToJsonFile   string
-	PathToHtmlFile   string
+	basePath          string
+	pathToDataFolder  string
+	PathToJsonFile    string
+	PathToHtmlFile    string
+	PathToStaticFiles string
 }
 
 func InitialisePath() *path {
@@ -19,5 +20,6 @@ func InitialisePath() *path {
 	paths.pathToDataFolder = filepath.Join(paths.basePath, "data_files")
 	paths.PathToJsonFile = filepath.Join(paths.pathToDataFolder, "gopher.json")
 	paths.PathToHtmlFile = filepath.Join(paths.basePath, "game", "templates", "index.html")
+	paths.PathToStaticFiles = filepath.Join(paths.basePath, "game")
 	return &paths
 }

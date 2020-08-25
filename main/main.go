@@ -23,7 +23,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	h, err := utilities.RouterHandler(*storyAsJson, htmlTemplate)
+	h, err := utilities.RouterHandler(*storyAsJson, htmlTemplate, paths.PathToStaticFiles)
+	fmt.Println(paths.PathToStaticFiles)
+
 	fmt.Println("Started server...")
 	log.Fatal(http.ListenAndServe(":9000", h))
 }
