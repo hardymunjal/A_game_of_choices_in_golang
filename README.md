@@ -13,4 +13,4 @@ game of choices, where the user proceeds to next stage as per the choice the use
 - HTML Template (https://golang.org/pkg/html/template/)
 - Strings (https://golang.org/pkg/strings/)
 
-
+Inspiration taken from https://courses.calhoun.io/courses/cor_gophercises
