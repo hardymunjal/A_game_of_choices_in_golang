@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <h1>{{.Title}}</h1>
-    {{range .Story}}
-        <p>{{.}}</p>
-    {{end}}
-    <ul>
-        {{range .Options}}
-            <li><a href="/{{.NextChapter}}">{{.Text}}</a></li>
+    <section class="page">
+        <h1>{{.Title}}</h1>
+        {{range .Story}}
+            <p>{{.}}</p>
         {{end}}
-    </ul>
+        <ul>
+            {{range .Options}}
+                <li><a href="/{{.NextChapter}}">{{.Text}}</a></li>
+            {{end}}
+        </ul>
+    </section>
 </body>
 </html>
