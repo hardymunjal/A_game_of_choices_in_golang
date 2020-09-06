@@ -4,8 +4,9 @@ This repo implements a GO server which displays a
 game of choices, where the user proceeds to next stage as per the choice the user makes.
 
 ## 📺 Demo
-
-![alt text](https://github.com/hardy8059/A_game_of_choices_in_golang/blob/master/Output%20Images/Server_Illustration.gif?raw=true)
+<p align="center">
+  <img src="https://github.com/hardy8059/A_game_of_choices_in_golang/blob/master/Output%20Images/Server_Illustration.gif?raw=true">
+</p>
 
 ## 📚 Packages Explored
 
