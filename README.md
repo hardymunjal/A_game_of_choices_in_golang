@@ -1,11 +1,11 @@
-# A_game_of_choices_in_golang
+# A Game of Choices
 
 This repo implements a GO server which displays a 
 game of choices, where the user proceeds to next stage as per the choice the user makes.
 
 ## 📺 Demo
 <p align="center">
-  <img src="https://github.com/hardy8059/A_game_of_choices_in_golang/blob/master/Output%20Images/Server_Illustration.gif?raw=true">
+  <img src="https://github.com/hardymunjal/A_game_of_choices_in_golang/blob/master/Output%20Images/Server_Illustration.gif?raw=true">
 </p>
 
 ## 📚 Packages Explored
@@ -18,7 +18,7 @@ game of choices, where the user proceeds to next stage as per the choice the use
 
 ## ❓ How to run...
 
-  1. Clone the [repository](https://github.com/hardy8059/A_game_of_choices_in_golang) at your desired location.
+  1. Clone the [repository](https://github.com/hardymunjal/A_game_of_choices_in_golang) at your desired location.
   
   2. Setup your Go workspace (if not done already)
   
